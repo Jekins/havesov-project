@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Start project</title>
+
+	<!-- for jquery in bottom -->
+	<script>
+        function $(n) {
+            function e(n, e) {console.error.apply(console, [n, "$("].concat([].slice.call(e, 0)).concat([")"]))}
+            if (1 === arguments.length || e("Bad signature used instead $(function|document).", arguments), n === document) return {ready: $};
+            "function" == typeof n || e("Bad signature used instead $(function).", arguments), $ready.push(n)
+        } $ready = [], jQuery = $;
+	</script>
+
+	<!-- styles -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./plugins/swiper/swiper.min.css" rel="stylesheet">
+	<link href="./css/common.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header" class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="/">
+						<img src="./img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="header__nav">
+					<a href="#" class="header__menu-link">
+						<i class="material-icons">&#xE5D2;</i>
+					</a>
+					<nav>
+						<div class="header__menu-close">
+							<i class="material-icons">&#xE5CD;</i>
+						</div>
+						<ul>
+							<li>
+								<a href="">Сериалы</a>
+							</li>
+							<li>
+								<a href="">Тв шоу</a>
+							</li>
+							<li>
+								<a href="">Фильмы</a>
+							</li>
+							<li>
+								<a href="">Клипы</a>
+							</li>
+							<li>
+								<a href="">Видео блог</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<div class="header__search">
+						<form class="header__search-inner">
+							<input placeholder="Введите название материала..." class="header__search-input" type="text">
+							<a href="" class="header__search-close">
+								<i class="material-icons">&#xE5CD;</i>
+							</a>
+						</form>
+						<a href="" class="header__search-link">
+							<i class="material-icons">&#xE8B6;</i>
+						</a>
+					</div>
+					<div class="header__auth">
+						<a href="" class="header__auth-link">
+							<i class="material-icons">&#xE853;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="body">
+		<div class="main-carousel">
+			<div class="main-carousel__bg" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></div>
+			<div class="container">
+				<div class="swiper-container main-carousel__carousel">
+					<div class="swiper-wrapper main-carousel__wrapper">
+						<section class="swiper-slide main-carousel__slide">
+							<div class="main-carousel__poster">
+								<a href="" class="main-carousel__poster-img" style="background-image:
+								url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+							</div>
+							<div class="main-carousel__info">
+								<h2 class="main-carousel__title">Название сериала</h2>
+								<table class="params">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+								<div class="main-carousel__actions">
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons">&#xE037;</i>
+										Смотреть
+									</a>
+								</div>
+							</div>
+						</section>
+						<section class="swiper-slide main-carousel__slide">
+							<div class="main-carousel__poster">
+								<a href="" class="main-carousel__poster-img" style="background-image:
+								url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+							</div>
+							<div class="main-carousel__info">
+								<h2 class="main-carousel__title">Название сериала</h2>
+								<table class="params">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+								<div class="main-carousel__actions">
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons">&#xE037;</i>
+										Смотреть
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="main-carousel__nav main-carousel__left">
+						<i class="material-icons">&#xE5CB;</i>
+					</div>
+					<div class="main-carousel__nav main-carousel__right">
+						<i class="material-icons">&#xE5CC;</i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section class="section section_dark-1">
+			<div class="container">
+				<h2>Сериалы</h2>
+				<div class="row indent-xlarge">
+					<div class="row__col row__col_sm-7">
+						<article class="popular-movie" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);">
+							<div class="popular-movie__inner">
+								<header class="popular-movie__header">
+									<h3 class="popular-movie__title">
+										Прибытие на Эльдорадо
+									</h3>
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons"></i>
+										Смотреть
+									</a>
+								</header>
+								<table class="popular-movie__params params params_horizontal">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+							</div>
+						</article>
+					</div>
+					<div class="row__col row__col_sm-5">
+						<br class="visible-xs">
+						<h4 class="heading-secondary">Лидеры просмотров</h4>
+						<ul class="list list_indent-medium list_animated list_hidden-md-from-5">
+							<li>
+								<a href="">Битва за Севостополь</a>
+							</li>
+							<li>
+								<a href="">Дженифер идет в атаку 2</a>
+							</li>
+							<li>
+								<a href="">Поющие одуванчики на поле боя</a>
+							</li>
+							<li>
+								<a href="">Добро пожаловать дядя Вася</a>
+							</li>
+							<li>
+								<a href="">Сумасшедшие приключения Джимми и Джозефа</a>
+							</li>
+							<li>
+								<a href="">Первый путь в космос</a>
+							</li>
+							<li>
+								<a href="" class="text-primary">Показать ещё</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="movies-list">
+					<div class="movies-list__heading">
+						<h4 class="heading-secondary">Обновления</h4>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section_dark-2">
+			<div class="container">
+				<h2>ТВ Шоу</h2>
+				<div class="row indent-xlarge">
+					<div class="row__col row__col_sm-7">
+						<article class="popular-movie" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);">
+							<div class="popular-movie__inner">
+								<header class="popular-movie__header">
+									<h3 class="popular-movie__title">
+										Прибытие на Эльдорадо
+									</h3>
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons"></i>
+										Смотреть
+									</a>
+								</header>
+								<table class="popular-movie__params params params_horizontal">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+							</div>
+						</article>
+					</div>
+					<div class="row__col row__col_sm-5">
+						<br class="visible-xs">
+						<h4 class="heading-secondary">Лидеры просмотров</h4>
+						<ul class="list list_indent-medium list_animated list_hidden-md-from-5">
+							<li>
+								<a href="">Битва за Севостополь</a>
+							</li>
+							<li>
+								<a href="">Дженифер идет в атаку 2</a>
+							</li>
+							<li>
+								<a href="">Поющие одуванчики на поле боя</a>
+							</li>
+							<li>
+								<a href="">Добро пожаловать дядя Вася</a>
+							</li>
+							<li>
+								<a href="">Сумасшедшие приключения Джимми и Джозефа</a>
+							</li>
+							<li>
+								<a href="">Первый путь в космос</a>
+							</li>
+							<li>
+								<a href="" class="text-primary">Показать ещё</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="movies-list">
+					<div class="movies-list__heading">
+						<h4 class="heading-secondary">Обновления</h4>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section_light-1">
+			<div class="container">
+				<h2 class="text-dark">Клипы</h2>
+				<div class="row indent-xlarge">
+					<div class="row__col row__col_sm-7">
+						<article class="popular-movie" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);">
+							<div class="popular-movie__inner">
+								<header class="popular-movie__header">
+									<h3 class="popular-movie__title">
+										Прибытие на Эльдорадо
+									</h3>
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons"></i>
+										Смотреть
+									</a>
+								</header>
+								<table class="popular-movie__params params params_horizontal">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+							</div>
+						</article>
+					</div>
+					<div class="row__col row__col_sm-5">
+						<br class="visible-xs">
+						<h4 class="heading-secondary">Лидеры просмотров</h4>
+						<ul class="list list_indent-medium list_animated list_hidden-md-from-5">
+							<li>
+								<a href="">Битва за Севостополь</a>
+							</li>
+							<li>
+								<a href="">Дженифер идет в атаку 2</a>
+							</li>
+							<li>
+								<a href="">Поющие одуванчики на поле боя</a>
+							</li>
+							<li>
+								<a href="">Добро пожаловать дядя Вася</a>
+							</li>
+							<li>
+								<a href="">Сумасшедшие приключения Джимми и Джозефа</a>
+							</li>
+							<li>
+								<a href="">Первый путь в космос</a>
+							</li>
+							<li>
+								<a href="" class="text-primary">Показать ещё</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="movies-list">
+					<div class="movies-list__heading">
+						<h4 class="heading-secondary">Обновления</h4>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section_light-2">
+			<div class="container">
+				<h2 class="text-dark">Видео блог</h2>
+				<div class="row indent-xlarge">
+					<div class="row__col row__col_sm-7">
+						<article class="popular-movie" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);">
+							<div class="popular-movie__inner">
+								<header class="popular-movie__header">
+									<h3 class="popular-movie__title">
+										Прибытие на Эльдорадо
+									</h3>
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons"></i>
+										Смотреть
+									</a>
+								</header>
+								<table class="popular-movie__params params params_horizontal">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+							</div>
+						</article>
+					</div>
+					<div class="row__col row__col_sm-5">
+						<br class="visible-xs">
+						<h4 class="heading-secondary">Лидеры просмотров</h4>
+						<ul class="list list_indent-medium list_animated list_hidden-md-from-5">
+							<li>
+								<a href="">Битва за Севостополь</a>
+							</li>
+							<li>
+								<a href="">Дженифер идет в атаку 2</a>
+							</li>
+							<li>
+								<a href="">Поющие одуванчики на поле боя</a>
+							</li>
+							<li>
+								<a href="">Добро пожаловать дядя Вася</a>
+							</li>
+							<li>
+								<a href="">Сумасшедшие приключения Джимми и Джозефа</a>
+							</li>
+							<li>
+								<a href="">Первый путь в космос</a>
+							</li>
+							<li>
+								<a href="" class="text-primary">Показать ещё</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="movies-list">
+					<div class="movies-list__heading">
+						<h4 class="heading-secondary">Обновления</h4>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section_dark-1">
+			<div class="container">
+				<h2>Фильмы</h2>
+				<div class="row indent-xlarge">
+					<div class="row__col row__col_sm-7">
+						<article class="popular-movie popular-movie_poster">
+							<div class="popular-movie__bg" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></div>
+							<img class="popular-movie__poster" src="http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg">
+							<div class="popular-movie__inner">
+								<header class="popular-movie__header">
+									<h3 class="popular-movie__title">
+										Прибытие на Эльдорадо
+									</h3>
+									<a class="btn btn_primary btn_icon-left" href="">
+										<i class="material-icons"></i>
+										Смотреть
+									</a>
+								</header>
+								<table class="popular-movie__params params params_horizontal">
+									<tr>
+										<td class="params__title">Год:</td>
+										<td class="params__text">2018</td>
+									</tr>
+									<tr>
+										<td class="params__title">Жанр:</td>
+										<td class="params__text">фантастика, фентези, драма</td>
+									</tr>
+									<tr>
+										<td class="params__title">Каналы:</td>
+										<td class="params__text">Первый канал</td>
+									</tr>
+								</table>
+							</div>
+						</article>
+					</div>
+					<div class="row__col row__col_sm-5">
+						<br class="visible-xs">
+						<h4 class="heading-secondary">Лидеры просмотров</h4>
+						<ul class="list list_indent-medium list_animated list_hidden-md-from-5">
+							<li>
+								<a href="">Битва за Севостополь</a>
+							</li>
+							<li>
+								<a href="">Дженифер идет в атаку 2</a>
+							</li>
+							<li>
+								<a href="">Поющие одуванчики на поле боя</a>
+							</li>
+							<li>
+								<a href="">Добро пожаловать дядя Вася</a>
+							</li>
+							<li>
+								<a href="">Сумасшедшие приключения Джимми и Джозефа</a>
+							</li>
+							<li>
+								<a href="">Первый путь в космос</a>
+							</li>
+							<li>
+								<a href="" class="text-primary">Показать ещё</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="movies-list movies-list_films">
+					<div class="movies-list__heading">
+						<h4 class="heading-secondary">Обновления</h4>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+								<div class="movies-list__subtitle">12 сезон 20 серия</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section_dark-2">
+			<div class="container">
+
+				<div class="movies-list movies-list_channel">
+					<div class="movies-list__heading">
+						<h2>Каналы</h2>
+						<div class="movies-list__nav-wrapper">
+							<div class="movies-list__nav movies-list__left">
+								<i class="material-icons">&#xE5CB;</i>
+							</div>
+							<div class="movies-list__nav movies-list__right">
+								<i class="material-icons">&#xE5CC;</i>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container movies-list__carousel movies-list__inner">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+							<article class="swiper-slide movies-list__item">
+								<a href="" class="movies-list__poster" style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+								<h4 class="movies-list__title">
+									<a href="">Название сериала</a>
+								</h4>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<footer id="footer" class="section section_dark-1 section_small">
+		<div class="container">
+			<div class="row">
+				<div class="row__col row__col_sm-6 text-secondary">
+					<a href="/">Havesov.net</a> &mdash;
+					разработано Jekins D&D
+				</div>
+				<div class="row__col row__col_sm-6 text-right text-left-xs text-secondary">
+					Copyrighted 2018
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- scripts -->
+<script src="./plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="./plugins/swiper/swiper.min.js"></script>
+<script src="./js/common.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* sortbar ***********************/
+.sortbar {
+	background-color: @c-bg-dark-2;
+	background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+	border-top: 1px solid @c-border;
+	overflow-x: auto;
+	-webkit-font-smoothing: antialiased;
+
+	&__inner {
+		padding-top: @indent-medium;
+		padding-bottom: @indent-medium;
+		display: table;
+		white-space: nowrap;
+
+		> * {
+			display: table-cell;
+		}
+	}
+	&__list {
+		display: table;
+
+		li {
+			display: table-cell;
+			padding-right: @indent-medium;
+
+			&.asc,
+			&.desc {
+				&,
+				a {
+					color: @c-primary;
+				}
+			}
+		}
+	}
+	&__label {
+		padding-right: @indent-medium;
+	}
+}

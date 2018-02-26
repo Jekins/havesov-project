@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Start project</title>
+
+	<!-- for jquery in bottom -->
+	<script>
+        function $(n) {
+            function e(n, e) {
+                console.error.apply(console, [n, "$("].concat([].slice.call(e, 0)).concat([")"]))
+            }
+
+            if (1 === arguments.length || e("Bad signature used instead $(function|document).", arguments), n === document) return {ready: $};
+            "function" == typeof n || e("Bad signature used instead $(function).", arguments), $ready.push(n)
+        }
+        $ready = [], jQuery = $;
+	</script>
+
+	<!-- styles -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./plugins/swiper/swiper.min.css" rel="stylesheet">
+	<link href="./css/common.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+	<header id="header" class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="/">
+						<img src="./img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="header__nav">
+					<a href="#" class="header__menu-link">
+						<i class="material-icons">&#xE5D2;</i>
+					</a>
+					<nav>
+						<div class="header__menu-close">
+							<i class="material-icons">&#xE5CD;</i>
+						</div>
+						<ul>
+							<li>
+								<a href="">Сериалы</a>
+							</li>
+							<li>
+								<a href="">Тв шоу</a>
+							</li>
+							<li>
+								<a href="">Фильмы</a>
+							</li>
+							<li>
+								<a href="">Клипы</a>
+							</li>
+							<li>
+								<a href="">Видео блог</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<div class="header__search">
+						<form class="header__search-inner">
+							<input placeholder="Введите название материала..." class="header__search-input" type="text">
+							<a href="" class="header__search-close">
+								<i class="material-icons">&#xE5CD;</i>
+							</a>
+						</form>
+						<a href="" class="header__search-link">
+							<i class="material-icons">&#xE8B6;</i>
+						</a>
+					</div>
+					<div class="header__auth">
+						<a href="" class="header__auth-link">
+							<i class="material-icons">&#xE853;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="body">
+		<div class="heading-page">
+			<div class="container">
+				<div class="heading-page__inner">
+					<div class="heading-page__backpath">
+						<a href="">Главная</a> /
+						<a href="">Каталог</a>
+					</div>
+					<div class="heading-page__title">
+						<h1>Сериалы</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sortbar">
+			<div class="container">
+				<div class="sortbar__inner">
+					<span class="sortbar__label">Сортировать по:</span>
+					<form name="news_set_sort" id="news_set_sort" method="post">
+						<ul class="sortbar__list">
+							<li class="asc"><a href="#" onclick="dle_change_sort('date','asc'); return false;">дате</a>
+							</li>
+							<li><a href="#" onclick="dle_change_sort('rating','desc'); return false;">популярности</a>
+							</li>
+							<li><a href="#"
+							       onclick="dle_change_sort('news_read','desc'); return false;">посещаемости</a></li>
+							<li><a href="#" onclick="dle_change_sort('comm_num','desc'); return false;">комментариям</a>
+							</li>
+							<li><a href="#" onclick="dle_change_sort('title','desc'); return false;">алфавиту</a></li>
+						</ul>
+						<input type="hidden" name="dlenewssortby" id="dlenewssortby" value="date">
+						<input type="hidden" name="dledirection" id="dledirection" value="DESC">
+						<input type="hidden" name="set_new_sort" id="set_new_sort" value="dle_sort_cat">
+						<input type="hidden" name="set_direction_sort" id="set_direction_sort"
+						       value="dle_direction_cat">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section_light-1 movies-list">
+			<div class="container">
+				<div class="movies-list__inner">
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+						<div class="movies-list__subtitle">12 сезон 20 серия</div>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+						<div class="movies-list__subtitle">12 сезон 20 серия</div>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+						<div class="movies-list__subtitle">12 сезон 20 серия</div>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+						<div class="movies-list__subtitle">12 сезон 20 серия</div>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://frpnet.net/wp-content/uploads/2014/02/heroes-dizi-banner.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+						<div class="movies-list__subtitle">12 сезон 20 серия</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section_light-1 movies-list movies-list_films">
+			<div class="container">
+				<div class="movies-list__inner">
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+					<article class="movies-list__item">
+						<a href="" class="movies-list__poster"
+						   style="background-image: url(http://topmov.net/wp-content/uploads/2017/01/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg);"></a>
+						<h4 class="movies-list__title">
+							<a href="">Название сериала</a>
+						</h4>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section_dark-2">
+			<div class="container">
+				<h2>Сериалы</h2>
+				<div class="row">
+					<div class="row__col row__col_md-7">
+						<div class="text-secondary">
+							Сериа́л (англ. Serial, также телесериал, последовательная программа) — разновидность
+							телевизионных и радио- передач, которые состоят из отдельных, последовательных эпизодов.
+							Наиболее известным форматом сериалов являются мыльные оперы, начавшие своё существование в
+							1930-х годах на американском радио[1]. Целью любого сериала является привлечь к экранам на
+							длительный период зрителя и удерживать его интерес к продукту эпизод за эпизодом. Во многих
+							последовательных сериалах используется классический элемент мыльных опер — рекап в начале и
+							клиффхэнгер в финале эпизода. Считается, что такая формула наиболее востребована зрителем и
+							позволяет без каких-либо неудобств следить за сюжетом неделю за неделей[2][3].
+							Последовательные сериалы, как правило, резко контрастируют с процедурными драмами, которые
+							состоят.
+						</div>
+					</div>
+					<div class="row__col row__col_md-5 hidden-sm hidden-xs">
+						<img class="img img_radius img_shadow"
+						     src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/62804b18669443.562cd567cbcd8.jpg"
+						     alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer" class="section section_dark-1 section_small">
+		<div class="container">
+			<div class="row">
+				<div class="row__col row__col_sm-6 text-secondary">
+					<a href="/">Havesov.net</a> &mdash;
+					разработано Jekins D&D
+				</div>
+				<div class="row__col row__col_sm-6 text-right text-left-xs text-secondary">
+					Copyrighted 2018
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- scripts -->
+<script src="./plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="./plugins/swiper/swiper.min.js"></script>
+<script src="./js/common.min.js"></script>
+
+</body>
+</html>

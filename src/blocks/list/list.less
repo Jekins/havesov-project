@@ -1,0 +1,42 @@
+/* list ***********************/
+.list {
+	&_indent {
+		&-medium {
+			.last;
+
+			> li {
+				margin-bottom: @indent-medium;
+			}
+		}
+		&-small {
+			.last;
+
+			> li {
+				margin-bottom: @indent-small;
+			}
+		}
+	}
+	&_animated {
+		> li {
+			transition: .2s;
+
+			&:hover {
+				transform: translateX(5px);
+			}
+		}
+	}
+	&_hidden {
+		&-md-from {
+			@media (min-width: @screen-sm) and (max-width: @screen-md) {
+				&-5 {
+					li:nth-child(n+5) {
+						display: none;
+					}
+					li:last-child {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/* params ***********************/
+.params {
+	tr {
+		td {
+			padding-top: @indent-xsmall;
+			padding-bottom: @indent-xsmall;
+
+			&:first-child {
+				padding-right: @cont-padding * 1;
+				color: @c-secondary;
+			}
+		}
+	}
+
+	&_horizontal {
+		&,
+		tbody,
+		td,
+		tr {
+			display: block;
+		}
+		tbody {
+			display: flex;
+		}
+		tr {
+			.overflow-ellipsis;
+
+			td {
+				.overflow-ellipsis;
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-right: @cont-padding * 2;
+			}
+			&:last-child td {
+				padding-right: 0;
+			}
+		}
+	}
+}

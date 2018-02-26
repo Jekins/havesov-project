@@ -1,0 +1,26 @@
+/* heading-page ***********************/
+.heading-page {
+	background-color: @c-bg-dark-2;
+	background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+
+	&__inner {
+		padding-top: @indent-xlarge;
+		padding-bottom: @indent-xlarge;
+		.last;
+
+		> * {
+			margin-bottom: @indent-medium;
+		}
+	}
+	&__title {
+		.last;
+	}
+	&__backpath {
+		margin-bottom: @indent-xsmall;
+
+		&,
+		a {
+			color: @c-secondary;
+		}
+	}
+}

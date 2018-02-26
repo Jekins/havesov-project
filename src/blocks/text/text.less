@@ -1,0 +1,34 @@
+/* text ***********************/
+.text {
+    &-left {
+        text-align: left;
+
+	    &-xs {
+		    @media (max-width: @screen-sm) {
+			    text-align: left !important;
+		    }
+	    }
+    }
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        text-align: center;
+    }
+
+	&-primary {
+		color: @c-primary !important;
+	}
+	&-success {
+		color: @c-success !important;
+	}
+	&-error {
+		color: @c-error !important;
+	}
+	&-dark {
+		color: @c-dark-2 !important;
+	}
+	&-secondary {
+		color: @c-secondary !important;
+	}
+}

@@ -1,0 +1,43 @@
+/* btn ***********************/
+.btn {
+	display: inline-block;
+	height: @ib-height;
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: @fz-caption;
+	line-height: @ib-height;
+	padding-left: @indent-medium;
+	padding-right: @indent-medium;
+	transition: .2s;
+	box-shadow: 0 7px 25px rgba(0,0,0,.1);
+	white-space: nowrap;
+
+	&_primary {
+		.btn-style(@c-white, #fe8c00, #f83600, @c-primary);
+	}
+	&_success {
+		.btn-style(@c-white, #11998e, #38ef7d, @c-success);
+	}
+	&_white {
+		.btn-style(@c-dark-2, @c-white, @c-white, @c-white);
+	}
+	&_black {
+		.btn-style(@c-white, #000000, #434343, @c-black);
+	}
+
+	&_icon {
+		&-left i {
+			font-size: 20px;
+			position: relative;
+			top: 5px;
+			margin-right: @indent-xsmall;
+		}
+		&-right i {
+			font-size: 20px;
+			position: relative;
+			top: 5px;
+			margin-left: @indent-xsmall;
+		}
+	}
+}

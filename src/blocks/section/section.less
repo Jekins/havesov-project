@@ -1,0 +1,41 @@
+/* section ***********************/
+.section {
+	padding-top: @indent-xxlarge;
+	padding-bottom: @indent-xxlarge;
+	@media (max-width: @screen-md) {
+		padding-top: @indent-xlarge;
+		padding-bottom: @indent-xlarge;
+	}
+
+	&_dark-1 {
+		background-color: @c-bg-dark-2;
+		background: linear-gradient(to right, @c-bg-dark-1 0%, darken(@c-bg-dark-1, 4%) 100%);
+	}
+	&_dark-2 {
+		background-color: @c-bg-dark-2;
+		background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+	}
+	&_light-1 {
+		background-color: @c-bg-light-1;
+		background: linear-gradient(to right, @c-bg-light-1 0%, darken(@c-bg-light-1, 4%) 100%);
+	}
+	&_light-2 {
+		background-color: @c-bg-light-2;
+		background: linear-gradient(to right, @c-bg-light-2 0%, darken(@c-bg-light-2, 4%) 100%);
+	}
+	&_light-1,
+	&_light-2 {
+		a {
+			color: @c-dark-2;
+
+			&:hover {
+				color: @c-primary;
+			}
+		}
+	}
+
+	&_small {
+		padding-top: @indent-large;
+		padding-bottom: @indent-large;
+	}
+}
