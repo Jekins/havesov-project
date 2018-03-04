@@ -1,0 +1,42 @@
+/* rating ***********************/
+.rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85px;
+
+	&_small {
+		width: 70px;
+	}
+	&__icon {
+		font-size: 24px;
+		color: @c-secondary;
+		display: block;
+		transition: .3s;
+
+		&,
+		&:hover {
+			text-decoration: none !important;
+		}
+		&_up {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		&_down {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&_small &__icon {
+		font-size: 20px;
+	}
+	&__count {
+		font-weight: @fw-bold;
+		font-size: @fz-subheading;
+	}
+	&_small &__count {
+		font-size: @fz-body;
+	}
+}

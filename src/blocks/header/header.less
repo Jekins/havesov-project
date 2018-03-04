@@ -9,7 +9,7 @@
 	.mix-icon {
 		display: block;
 		font-size: @icon-size;
-		transition: .2s;
+		transition: .3s;
 		background-color: transparent;
 		border: none;
 		color: @c-link;
@@ -92,7 +92,7 @@
 				cursor: pointer;
 				overflow: hidden;
 				opacity: 0;
-				transition: .2s;
+				transition: .3s;
 				text-align: left;
 				z-index: -1;
 				display: none;
@@ -107,10 +107,10 @@
 					visibility: hidden;
 					overflow-x: auto;
 					transform: translateX(100%);
-					transition: .2s;
+					transition: .3s;
 					width: 300px;
 					z-index: 2;
-					-webkit-font-smoothing: antialiased;
+					-webkit-overflow-scrolling: touch;
 					//@keyframes show {
 					//	0%   { transform: translateX(100%) !important; }
 					//	100% { transform: translateX(0) !important; }
@@ -142,7 +142,7 @@
 						padding-right: @indent-medium;
 						text-transform: uppercase;
 						letter-spacing: 1px;
-						transition: .2s;
+						transition: .3s;
 						line-height: @header-height;
 						display: block;
 						height: 100%;
@@ -218,6 +218,8 @@
 				transform: translateY(-50%);
 				visibility: visible;
 				opacity: 1;
+				margin-left: -5px;
+				margin-right: -5px;
 			}
 		}
 		&-input {}

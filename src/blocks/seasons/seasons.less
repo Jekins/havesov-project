@@ -1,0 +1,46 @@
+/* seasons ***********************/
+.seasons {
+	.bg-dark-2;
+	border-top: 1px solid @c-border;
+
+	&__inner {
+		max-width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		padding-top: @indent-medium;
+		padding-bottom: @indent-medium;
+
+		ul {
+			display: table;
+			white-space: nowrap;
+
+			li {
+				display: table-cell;
+				vertical-align: middle;
+
+				a {
+					padding: @indent-xsmall @indent-medium;
+					text-transform: uppercase;
+					font-weight: @fw-bold;
+					letter-spacing: 1px;
+					border-radius: 50px;
+					color: @c-white;
+					display: block;
+					transition: .3s;
+
+					&.active {
+						.bg-primary;
+						box-shadow: @shadow-dark;
+
+						&:hover {
+							box-shadow: 0 0 0 transparent;
+						}
+					}
+					&:hover:not(.active) {
+						color: @c-link-hover;
+					}
+				}
+			}
+		}
+	}
+}

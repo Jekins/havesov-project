@@ -8,26 +8,25 @@
 	}
 
 	&_dark-1 {
-		background-color: @c-bg-dark-2;
-		background: linear-gradient(to right, @c-bg-dark-1 0%, darken(@c-bg-dark-1, 4%) 100%);
+		.bg-dark-1;
 	}
 	&_dark-2 {
-		background-color: @c-bg-dark-2;
-		background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+		.bg-dark-2;
 	}
 	&_light-1 {
-		background-color: @c-bg-light-1;
-		background: linear-gradient(to right, @c-bg-light-1 0%, darken(@c-bg-light-1, 4%) 100%);
+		.bg-light-1;
 	}
 	&_light-2 {
-		background-color: @c-bg-light-2;
-		background: linear-gradient(to right, @c-bg-light-2 0%, darken(@c-bg-light-2, 4%) 100%);
+		.bg-light-2;
 	}
 	&_light-1,
 	&_light-2 {
-		a {
+		&,
+		a,
+		h1, h2, h3, h4, h5, h6 {
 			color: @c-dark-2;
-
+		}
+		a {
 			&:hover {
 				color: @c-primary;
 			}

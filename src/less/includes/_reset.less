@@ -9,6 +9,17 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 	background: transparent;
 }
 
+*,
+*:hover,
+*:focus,
+*:active {
+	outline: none !important;
+}
+
+button {
+	border: none;
+}
+
 article, aside, figure, footer, header, nav, section, details, summary {display: block;}
 
 /* Handle box-sizing while better addressing child elements:
@@ -41,7 +52,7 @@ embed {max-width: 100%;}
 */
 
 /* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+html {overflow-y: scroll; }
 
 /* we use a lot of ULs that aren't bulleted.
 	don't forget to restore the bullets within content. */

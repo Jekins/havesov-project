@@ -2,6 +2,7 @@
 html,
 body {
 	height: 100%;
+	-webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -13,6 +14,31 @@ body {
 	margin-top: @header-height;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 10px;
+}
+@media (max-width: 992px) {
+	::-webkit-scrollbar {
+		height: 3px;
+		width: 3px
+	}
+}
+::-webkit-scrollbar-track {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: darken(@c-bg-dark-1, 4%);
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: @c-primary;
+	cursor: pointer;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background-color: lighten(@c-primary, 8%);
 }
 
 a {
@@ -41,20 +67,29 @@ input {
 h1 {
 	.font-display-1;
 }
+
 h2 {
 	.font-headline;
 }
+
 h3 {
 	.font-title;
 }
+
 h4 {
 	.font-subheading;
 }
+
 h5 {
 	.font-subheading;
 }
+
 h6 {
 	.font-subheading;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: @c-white;
 }
 
 b, strong {
@@ -150,6 +185,7 @@ select {
 		box-shadow: none;
 	}
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -160,8 +196,10 @@ select {
 
 textarea {
 	height: auto;
+	border-radius: @radius-medium;
 	min-height: 150px;
 	padding: @indent-medium;
+	background-color: @c-bg-dark-2;
 }
 
 .has-error input[type="text"],

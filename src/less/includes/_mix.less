@@ -79,14 +79,35 @@
 .font-headline {
 	.font-style(@fz-headline, @lh-headline, @fw-bold);
 	margin-top: 0;
-	margin-bottom: @indent-medium;
+	margin-bottom: @indent-medium + @indent-small;
 }
 .font-display-1 {
 	.font-style(@fz-display-1, @lh-display-1, @fw-bold);
 	margin-top: 0;
-	margin-bottom: @indent-large;
+	margin-bottom: @indent-large + @indent-small;
 }
 .font-display-2 {
 	.font-display-1;
 	.font-style(@fz-display-2, @lh-display-2, @fw-bold);
+}
+
+.bg-primary {
+	background-color: @c-primary;
+	background: linear-gradient(to right, #fe8c00 0%, #f83600 100%);
+}
+.bg-dark-1 {
+	background-color: @c-bg-dark-2;
+	background: linear-gradient(to right, @c-bg-dark-1 0%, darken(@c-bg-dark-1, 4%) 100%);
+}
+.bg-dark-2 {
+	background-color: @c-bg-dark-2;
+	background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+}
+.bg-light-1 {
+	background-color: @c-bg-light-1;
+	background: linear-gradient(to right, @c-bg-light-1 0%, darken(@c-bg-light-1, 4%) 100%);
+}
+.bg-light-2 {
+	background-color: @c-bg-light-2;
+	background: linear-gradient(to right, @c-bg-light-2 0%, darken(@c-bg-light-2, 4%) 100%);
 }

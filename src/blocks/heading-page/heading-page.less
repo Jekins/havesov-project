@@ -1,7 +1,6 @@
 /* heading-page ***********************/
 .heading-page {
-	background-color: @c-bg-dark-2;
-	background: linear-gradient(to right, @c-bg-dark-2 0%, darken(@c-bg-dark-2, 4%) 100%);
+	.bg-dark-2;
 
 	&__inner {
 		padding-top: @indent-xlarge;
@@ -21,6 +20,44 @@
 		&,
 		a {
 			color: @c-secondary;
+		}
+	}
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__rating {}
+	&__menu {
+		@media (max-width: 600px) {
+			display: none;
+		}
+
+		menu {
+			padding: 0;
+		}
+		li {
+			display: inline-block;
+			padding-right: @indent-large;
+
+			&:last-child {
+				padding-right: 0;
+			}
+			a {
+				color: @c-white;
+				font-size: @fz-subheading;
+				transition: .3s;
+
+				&:hover {
+					color: @c-link-hover;
+				}
+				i {
+					font-size: @fz-subheading + 2;
+					color: @c-secondary;
+					position: relative;
+					top: 3px;
+					margin-right: @indent-xsmall;
+				}
+			}
 		}
 	}
 }

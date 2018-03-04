@@ -36,6 +36,40 @@
 		> * {
 			margin-bottom: @indent-medium;
 		}
+
+		&_active {
+			position: relative;
+
+			&:after {
+				@keyframes impulse {
+					0% {
+						transform: scale(.8);
+					}
+					55% {
+						transform: scale(1);
+					}
+					100% {
+						transform: scale(.8);
+					}
+				}
+
+				animation: impulse 2s infinite;
+				content: '';
+				display: block;
+				width: @indent-medium;
+				height: @indent-medium;
+				border-radius: 100%;
+				.bg-primary;
+				box-shadow: @shadow-dark;
+				z-index: 1;
+				position: absolute;
+				top: @indent-small;
+				left: @indent-large;
+			}
+			a {
+				color: @c-primary;
+			}
+		}
 	}
 	&_films &__item {
 		width: 100% / 5;
@@ -86,13 +120,13 @@
 		background-color: rgba(0,0,0,.2);
 		border-radius: 50px;
 		z-index: 1;
-		transition: .2s;
+		transition: .3s;
 		position: relative;
 		display: inline-block;
 		height: @nav-size;
 
 		&:hover {
-			background-color: @c-primary;
+			.bg-primary;
 			color: @c-white;
 		}
 	}

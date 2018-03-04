@@ -1,0 +1,58 @@
+/* comments ***********************/
+.comments {
+	&__item {
+		padding-top: @indent-large;
+		padding-bottom: @indent-large;
+		border-bottom: 1px solid @c-border;
+
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__text {
+		margin-top: @indent-medium;
+		color: @c-secondary;
+	}
+	&__person {
+		display: flex;
+		align-items: center;
+
+		&-info {
+			small {
+				display: block;
+				line-height: 1;
+			}
+		}
+	}
+	&__photo {
+		width: 60px;
+		height: 60px;
+		background-size: cover;
+		background-position: center center;
+		margin-right: @indent-large;
+		border-radius: 100%;
+		box-shadow: @shadow-dark;
+		text-decoration: none !important;
+		display: block;
+		transition: .3s;
+
+		&:hover {
+			box-shadow: 0 0 0 transparent;
+		}
+	}
+	&__photo {}
+	&__rating {
+		@media (max-width: 450px) {
+			display: none;
+		}
+	}
+}

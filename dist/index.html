@@ -20,6 +20,8 @@
 
 	<!-- styles -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="./plugins/social-likes/social-likes_flat.css" rel="stylesheet">
 	<link href="./plugins/swiper/swiper.min.css" rel="stylesheet">
 	<link href="./css/common.min.css" rel="stylesheet">
 </head>
@@ -74,7 +76,7 @@
 						</a>
 					</div>
 					<div class="header__auth">
-						<a href="" class="header__auth-link">
+						<a href="javascript:;" data-fancybox data-src="#dialog-auth" class="header__auth-link">
 							<i class="material-icons">&#xE853;</i>
 						</a>
 					</div>
@@ -834,10 +836,35 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="dialogs">
+		<div style="display: none;" id="dialog-auth">
+			<div class="auth-box">
+				<div class="auth-box__item">
+					<label>Логин:</label>
+					<input type="text">
+				</div>
+				<div class="auth-box__item">
+					<label>Пароль:</label>
+					<input type="password">
+				</div>
+				<div class="auth-box__item">
+					<label class="control-box">
+						<input type="checkbox">Запомнить на сайте
+					</label>
+				</div>
+				<div class="auth-box__item">
+					<button type="submit" class="btn btn_primary">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- scripts -->
 <script src="./plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="./plugins/social-likes/social-likes.min.js"></script>
 <script src="./plugins/swiper/swiper.min.js"></script>
 <script src="./js/common.min.js"></script>
 

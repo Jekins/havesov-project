@@ -1,5 +1,7 @@
 /* params ***********************/
 .params {
+	width: 100%;
+
 	tr {
 		td {
 			padding-top: @indent-xsmall;
@@ -8,7 +10,15 @@
 			&:first-child {
 				padding-right: @cont-padding * 1;
 				color: @c-secondary;
+				white-space: nowrap;
+				width: .000001%;
 			}
+		}
+		&:first-child td {
+			padding-top: 0;
+		}
+		&:last-child td {
+			padding-bottom: 0;
 		}
 	}
 
@@ -30,9 +40,49 @@
 				padding-top: 0;
 				padding-bottom: 0;
 				padding-right: @cont-padding * 2;
+
+				&:first-child {
+					width: auto;
+				}
 			}
 			&:last-child td {
 				padding-right: 0;
+			}
+		}
+	}
+
+	&_bordered {
+		tr {
+			td {
+				padding-top: @indent-small;
+				padding-bottom: @indent-small;
+				border-bottom: 1px solid @c-border;
+			}
+			&:last-child td {
+				border-bottom: none;
+			}
+		}
+	}
+	&_xs-row {
+		&,
+		tbody,
+		tr,
+		td {
+			@media (max-width: 600px) {
+				display: block;
+			}
+		}
+		td {
+			&:first-child {
+				@media (max-width: 600px) {
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+			}
+			&:last-child {
+				@media (max-width: 600px) {
+					padding-top: 0;
+				}
 			}
 		}
 	}

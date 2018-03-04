@@ -1,4 +1,4 @@
-/*! StartProject 25-02-2018 | Project base: Jekins.ru */
+/*! StartProject 04-03-2018 | Project base: Jekins.ru */
 /* header ***********************/
 $(function () {
     $(document).on('click', '.header__search-link, .header__search-close', function () {
@@ -71,10 +71,12 @@ $.fn.moviesListCarouselInit = function () {
         wide = 4,
         narrow = 5;
 
-    console.log($(window).width() < 992 && $(window).width() > 768);
-    if ($(window).width() <= 992 && $(window).width() > 768) {
+    if ($(window).width() <= 1200 && $(window).width() > 992) {
         wide = 3;
         narrow = 4;
+    } else if ($(window).width() <= 992 && $(window).width() > 768) {
+        wide = 2;
+        narrow = 3;
     } else if ($(window).width() > 600 && $(window).width() <= 768) {
         wide = 2;
         narrow = 3;
