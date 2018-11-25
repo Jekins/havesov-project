@@ -1,4 +1,4 @@
-# Стартовый проект
+# Havesov
 
  * Сайт: https://github.com/jekins
  * Front-end: [Jekins](http://jekins.ru)
